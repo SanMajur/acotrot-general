@@ -7,7 +7,7 @@ import { Divide as Hamburger } from "hamburger-react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-gray-800 text-white">
+    <header className="bg-gray-800 text-white fixed top-0 right-0 left-0 z-50">
       <nav className="md:container mx-auto flex justify-between items-center relative p-4">
         <div className="text-2xl font-bold">Acotrot</div>
         <button
@@ -53,22 +53,22 @@ export default function Navbar() {
         {/* Desktop nav */}
         <ul className="hidden md:flex ">
           <li className="px-4 hover:border-b-2 border-cyan-600 py-4 cursor-pointer">
-            <Link className="" href="/">
+            <Link className="scroll-mt-20" href="/">
               Home
             </Link>
           </li>
           <li className="px-4 hover:border-b-2 border-cyan-600 py-4 cursor-pointer">
-            <Link className="" href="/about">
+            <Link className="scroll-mt-20" href="/about">
               About
             </Link>
           </li>
           <li className="px-4 hover:border-b-2 border-cyan-600 py-4 cursor-pointer">
-            <Link className="" href="/services">
+            <Link className="scroll-mt-20" href="/services">
               Services
             </Link>
           </li>
           <li className="px-4 hover:border-b-2 border-cyan-600 py-4 cursor-pointer">
-            <Link className="" href="/contact">
+            <Link className="scroll-mt-20" href="/contact">
               Contact
             </Link>
           </li>
