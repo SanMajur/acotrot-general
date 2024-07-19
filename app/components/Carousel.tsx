@@ -72,7 +72,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides, parentWidth }) => {
   }, [nextSlide]);
   return (
     <div className="h-full relative ">
-      <div className=" absolute z-30 w-full h-full bg-black/80 group ">
+      <div className=" absolute z-30 w-full h-full bg-black/50 group ">
         <div
           style={{ transform: "translate(0, -50%)" }}
           className="hidden group-hover:flex justify-center items-center absolute top-[50%] rounded-full bg-white/50 hover:bg-gray-800 hover:text-gray-300 hover:ring-2 left-8 md:left-12 lg:left-24 text-5xl text-black z-10 cursor-pointer "
