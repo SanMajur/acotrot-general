@@ -8,11 +8,11 @@ import Logo from "./Logo";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-gray-100 text-gray-900 shadow-md fixed top-0 right-0 left-0 z-50">
+    <header className="bg-gray-100 text-gray-800 shadow-md fixed top-0 right-0 left-0 z-50">
       <nav className="lg:container mx-auto flex justify-between items-center relative px-8 py-2">
         <Logo />
         <button
-          className="lg:hidden text-blue-900 focus:outline-none"
+          className="lg:hidden text-gray-700 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           <Hamburger toggled={isOpen} toggle={setIsOpen} />

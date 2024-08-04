@@ -9,7 +9,7 @@ export default function ContactInfo() {
     <div className="flex flex-col space-y-8 justify-between">
       <div className="">
         <h2 className="font-bold text-4xl tracking-wide">Contact Us</h2>
-        <p className="pt-2 text-cyan-50 text-sm">
+        <p className="pt-2 text-cyan-50 text-sm max-w-80">
           Please enter the details of your request. A member of our support
           staff will respond as soon as possible.
         </p>
