@@ -1,7 +1,3 @@
-import React from "react";
-//import Carousel from "./Carousel";
-import { slides } from "../data";
-import heroImg from "../../public/images/hero.jpg";
 import Button from "./Button";
 import Link from "next/link";
 import Card from "./Card";
