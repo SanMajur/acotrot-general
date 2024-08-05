@@ -1,35 +1,22 @@
 import Image from "next/image";
 import React from "react";
-import Button from "./Button";
-
-export default function Card({
-  cardTitle,
-  description,
-}: {
-  cardTitle: string;
+import { IconType } from "react-icons";
+interface CardProps {
+  title: string;
+  icon?: IconType;
   description: string;
-  //image: string;
-}) {
+}
+const Card: React.FC<CardProps> = ({ title, icon: Icon, description }) => {
   return (
-    <div className="">
-      <div className="card bg-base-100 image-full w-96 shadow-xl">
-        <figure>
-          <Image
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="Shoes"
-            width={40}
-            height={40}
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">{cardTitle}</h2>
-          <p>{description}</p>
-          <div className="card-actions justify-end">
-            <Button />
-            {/* // <button className="btn btn-primary">Buy Now</button> */}
-          </div>
-        </div>
+    <div className="flex w-96 gap-4 ">
+      <div className="">
+        {Icon && <Icon size={50} className="text-blue-700" />}
+      </div>
+      <div className="flex flex-col gap-1">
+        <h2 className="text-neutral-600 text-xl font-bold">{title}</h2>
+        <p className="text-sm text-neutral-600">{description}</p>
       </div>
     </div>
   );
-}
+};
+export default Card;

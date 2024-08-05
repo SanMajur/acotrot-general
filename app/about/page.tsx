@@ -1,10 +1,9 @@
 import React from "react";
-//import Carousel from "../components/Carousel";
 
-export default function About() {
+export default function AboutPage() {
   return (
-    <div className="min-h-screen w-full h-full bg-gradient-to-r from-slate-700 to-gray-400 via-gray-200 bg-cover bg-center">
-      <h2 className="capitalize text-2xl p-8">About us</h2>
+    <div className="min-h-screen p-8">
+      <h1 className="text-3xl">About us</h1>
     </div>
   );
 }
