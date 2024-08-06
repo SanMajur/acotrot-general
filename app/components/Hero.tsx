@@ -7,7 +7,7 @@ import {
   MdEmojiTransportation,
   MdHotel,
 } from "react-icons/md";
-import {FaOilWell} from "react-icons/fa"
+import {FaOilWell} from "react-icons/fa6"
 
 export default function Hero() {
   return (
