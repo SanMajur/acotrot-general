@@ -7,6 +7,7 @@ import {
   MdEmojiTransportation,
   MdHotel,
 } from "react-icons/md";
+import {FaOilWell} from "react-icons/fa"
 
 export default function Hero() {
   return (
@@ -44,14 +45,19 @@ export default function Hero() {
           />
           <Card
             title="Transportation"
-            description="On-demand construction project solutions"
+            description="On-demand transportation logistics solutions."
             icon={MdEmojiTransportation}
           />
           <Card
             title="Accomodation"
-            description="On-demand construction project solutions"
+            description="On-demand personalized lodging services."
             icon={MdHotel}
           />
+          <Card 
+            title="Well Drilling"
+            description="On-demand reliable well drilling."
+            icon={FaOilWell}
+            />
         </div>
       </section>
       <section className="bg-gray-800 h-72"></section>
