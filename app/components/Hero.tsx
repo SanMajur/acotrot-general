@@ -60,7 +60,9 @@ export default function Hero() {
             />
         </div>
       </section>
-      <section className="bg-gray-800 h-72"></section>
+      <section className="bg-gray-800 h-72">
+        <h2 className="text-2xl font-semibold">About Us</h2>
+      </section>
     </div>
   );
 }
