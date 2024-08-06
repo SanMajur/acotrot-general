@@ -11,7 +11,7 @@ import {
 export default function Hero() {
   return (
     <div className="relative ">
-      <div className="flex items-center justify-center h-[32rem] md:h-[37rem] bg-hero-bg bg-fixed bg-cover bg-center bg-norepeat before:content-[''] before:bg-hero-bg before:block before:bg-cover before:bg-center before:-z-50 before:fixed before:top-0  before:right-0 before:left-0 before:bottom-0 -z-50"></div> 
+      <div className="flex items-center justify-center h-[32rem] md:h-[37rem] bg-hero-bg bg-fixed bg-cover bg-center bg-norepeat"></div> 
       <div className="h-[32rem] md:h-[37rem] absolute top-0 left-0 right-0 bg-black/40"></div>
       <section className="absolute top-20 left-0 right-0 flex flex-col px-8 md:max-w-4xl xl:max-w-6xl mx-auto lg:px-0 z-10">
         <h1 className="text-[2.5rem] md:text-[3.5rem]  text-gray-200 font-bold capitalize  tracking-wide leading-tight md:leading-snug md:w-[80%]">
