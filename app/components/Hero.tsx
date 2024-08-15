@@ -1,6 +1,6 @@
 import Button from "./contact/Button";
-import MobileCard from "./mobile-slider/MobileCard";
-import ImageCard from "./others/ImageCard";
+import MobileCard from "../components/home/MobileCard";
+import Slider from "./home/swiper/Slider";
 
 export default function Hero() {
   return (
@@ -20,25 +20,11 @@ export default function Hero() {
         <Button title="Contact us" link={"/contact"} />
       </section>
 
-      <section className="my-[50px] mx-[8.3333%]">
+      <section className=" my-[50px] mx-[8.3333%]">
         <h1 className="text-[calc(27.648px+6.912*(100vw-320px)/320)] font-normal my-[50px] mx-0 uppercase text-[#333]">
           our <strong className="block">services</strong>
         </h1>
-        <div className="relative sm:hidden">
-          <MobileCard />
-        </div>
-        <div className="hidden sm:flex gap-4">
-          <ImageCard
-            imgSrc={"https://i.imgur.com/8DYumaY.jpg"}
-            title={"Agriculture"}
-            link={"../services/agriculture"}
-          />
-          <ImageCard
-            imgSrc={"https://i.imgur.com/8IuucQZ.jpg"}
-            title={"Contruction"}
-            link={"../services/construction"}
-          />
-        </div>
+        <Slider />
       </section>
     </div>
   );

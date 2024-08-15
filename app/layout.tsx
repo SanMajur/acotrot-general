@@ -18,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased ${inter.className}`}>
+      <body
+        className={`antialiased bg-gradient-to-r from-gray-200 to-gray-300 ${inter.className}`}
+      >
         <Navbar />
         <div className="mt-20">{children}</div>
         <Footer />

@@ -15,9 +15,7 @@ export default function DesktopNav() {
         </Link>
       </li>
       <li className="px-4 hover:border-b-2 border-cyan-600 py-4 cursor-pointer">
-        <Link className="scroll-mt-20" href="/services">
-          Services
-        </Link>
+        <h2 className="scroll-mt-20">Services</h2>
       </li>
       <li className="px-4 hover:border-b-2 border-cyan-600 py-4 cursor-pointer">
         <Link className="scroll-mt-20" href="/contact">

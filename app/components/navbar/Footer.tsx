@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "./navbar/Logo";
 import Link from "next/link";
 import { MdEmail, MdFacebook } from "react-icons/md";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
@@ -17,7 +16,7 @@ export default function Footer() {
             <Link href="/about">About us</Link>
           </li>
           <li className="hover:text-gray-600">
-            <Link href="/services">Services</Link>
+            <h2>Services</h2>
           </li>
           <li className="hover:text-gray-600">
             <Link href="/contact">Contact us</Link>

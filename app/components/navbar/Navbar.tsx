@@ -27,26 +27,30 @@ export default function Navbar() {
                ? "absolute top-[5.25rem] z-50 pointer-events-none   w-full left-0 h-screen lg:hidden transition-all duration-500 ease-in-out"
               : " absolute top-[5.25rem] z-50 pointer-events-none   w-full  -left-[100%] h-screen lg:hidden transition-all duration-500 ease-in-out" */}
 
-          <ul
-            className="block bg-gray-800 w-60 h-screen text-white"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            <li className="hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500 border-t">
+          <ul className="block bg-gray-800 w-60 h-screen text-white">
+            <li
+              className="hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500 border-t"
+              onClick={() => setIsOpen(!isOpen)}
+            >
               <Link className="block px-8" href="/">
                 Home
               </Link>
             </li>
-            <li className="hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500">
+            <li
+              className="hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500"
+              onClick={() => setIsOpen(!isOpen)}
+            >
               <Link className="block px-8" href="/about">
                 About
               </Link>
             </li>
             <li className=" hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500 ">
-              <Link className="block px-8" href="/services">
-                Services
-              </Link>
+              <h2 className="block px-8">Services</h2>
             </li>
-            <li className=" hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500 ">
+            <li
+              className=" hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500 "
+              onClick={() => setIsOpen(!isOpen)}
+            >
               <Link className="block px-8" href="/contact">
                 Contact
               </Link>
