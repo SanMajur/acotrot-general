@@ -5,8 +5,8 @@ import Slider from "./home/swiper/Slider";
 export default function Hero() {
   return (
     <div className="relative ">
-      <div className=" h-[27rem] md:h-[37rem] bg-hero-bg md:bg-fixed bg-cover bg-center bg-norepeat"></div>
-      <div className="h-[27rem] md:h-[37rem] absolute top-0 left-0 right-0 bg-black/40"></div>
+      <div className=" h-[30rem] md:h-[37rem] bg-hero-bg md:bg-fixed bg-cover bg-center bg-norepeat"></div>
+      <div className="h-[30rem] md:h-[37rem] absolute top-0 left-0 right-0 bg-black/40"></div>
       <section className="absolute top-20 left-0 right-0 flex flex-col px-8 md:max-w-4xl xl:max-w-6xl mx-auto lg:px-0 z-10">
         <h1 className="text-[2.5rem] md:text-[3.5rem]  text-gray-200 font-bold capitalize  tracking-wide leading-tight md:leading-snug md:w-[80%]">
           going forward with full momentum

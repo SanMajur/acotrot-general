@@ -8,7 +8,6 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function Slider() {
-  const [activeSlide, setActiveSlide] = useState(0);
   const swiperRef = useRef();
 
   return (
@@ -35,12 +34,7 @@ export default function Slider() {
           <div className="w-full  transition-transform ease-in-out duration-500 rounded-md max-w-xl lg:max-w-7xl  mx-auto ">
             {services.map((slide, index) => (
               <>
-                <SwiperSlide
-                  className={`${
-                    index === activeSlide ? "group overflow-hidden" : "hidden"
-                  }`}
-                  key={index}
-                >
+                <SwiperSlide className="group overflow-hidden" key={index}>
                   <Image
                     src={slide.imageUrl}
                     alt=""
