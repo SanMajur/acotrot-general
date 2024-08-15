@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="relative ">
       <div className=" h-[30rem] md:h-[37rem] bg-hero-bg md:bg-fixed bg-cover bg-center bg-norepeat"></div>
       <div className="h-[30rem] md:h-[37rem] absolute top-0 left-0 right-0 bg-black/40"></div>
-      <section className="absolute top-20 left-0 right-0 flex flex-col px-8 md:max-w-4xl xl:max-w-6xl mx-auto lg:px-0 z-10">
+      <section className="absolute top-20 left-0 right-0 flex flex-col px-8 md:max-w-4xl xl:max-w-6xl mx-auto lg:px-0 z-10 mb-8">
         <h1 className="text-[2.5rem] md:text-[3.5rem]  text-gray-200 font-bold capitalize  tracking-wide leading-tight md:leading-snug md:w-[80%]">
           going forward with full momentum
         </h1>
@@ -17,7 +17,9 @@ export default function Hero() {
           corners of the world.
         </p>
 
-        <Button title="Contact us" link={"/contact"} />
+        <div className="mb-6">
+          <Button title="Contact us" link={"/contact"} />
+        </div>
       </section>
 
       <section className=" my-[50px] mx-[8.3333%]">
