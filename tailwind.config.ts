@@ -11,6 +11,8 @@ const config: Config = {
       backgroundImage: {
         "hero-parallax": 'url("../public/images/hero.jpg")',
         "hero-bg": 'url("../public/images/hero-bg-1.jpg")',
+        arrowLeft: 'url("../public/images/arrowLeft.svg")',
+        arrowRight: 'url("../public/images/arrowRight.svg")',
       },
     },
   },

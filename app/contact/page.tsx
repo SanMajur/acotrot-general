@@ -1,10 +1,6 @@
-import Link from "next/link";
 import React from "react";
-import { FaInstagram, FaLinkedin, FaPhone, FaPhoneAlt } from "react-icons/fa";
-import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
-import { MdEmail, MdFacebook } from "react-icons/md";
-import ContactForm from "../components/ContactForm";
-import ContactInfo from "../components/ContactInfo";
+import ContactForm from "../components/contact/ContactForm";
+import ContactInfo from "../components/contact/ContactInfo";
 
 export default function Contact() {
   return (

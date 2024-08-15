@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "./Logo";
+import Logo from "./navbar/Logo";
 import Link from "next/link";
 import { MdEmail, MdFacebook } from "react-icons/md";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
