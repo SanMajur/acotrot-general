@@ -4,9 +4,11 @@ import React, { useState } from "react";
 import { Divide as Hamburger } from "hamburger-react";
 import DesktopNav from "./DesktopNav";
 import Logo from "./Logo";
+import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
   return (
     <header className="bg-gray-100 text-gray-800 shadow-md fixed top-0 right-0 left-0 z-50">
       <nav className="lg:container mx-auto flex justify-between items-center relative px-8 py-2">
@@ -44,8 +46,37 @@ export default function Navbar() {
                 About
               </Link>
             </li>
-            <li className=" hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500 ">
-              <h2 className="block px-8">Services</h2>
+            <li
+              className=" hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500 "
+              onClick={() => setDropdown(!dropdown)}
+            >
+              <h2 className=" px-8 flex justify-between items-center">
+                Services{" "}
+                <MdArrowDropUp
+                  size={25}
+                  className={`${dropdown ? "w-10" : "rotate-180"}`}
+                />
+              </h2>
+              <ul className="px-12 hidden">
+                <li className="hover:bg-gray-600 py-4 cursor-pointer">
+                  <Link href="">Agriculture</Link>
+                </li>
+                <li className="hover:bg-gray-600 py-4 cursor-pointer">
+                  <Link href="">Construction</Link>
+                </li>
+                <li className="hover:bg-gray-600 py-4 cursor-pointer">
+                  <Link href="">Consumer Goods</Link>
+                </li>
+                <li className="hover:bg-gray-600 py-4 cursor-pointer">
+                  <Link href="">Transportation</Link>
+                </li>
+                <li className="hover:bg-gray-600 py-4 cursor-pointer">
+                  <Link href="">Well Drilling</Link>
+                </li>
+                <li className="hover:bg-gray-600 py-4 cursor-pointer">
+                  <Link href="">Accomodation</Link>
+                </li>
+              </ul>
             </li>
             <li
               className=" hover:bg-gray-400 py-4 cursor-pointer border-b border-gray-500 "

@@ -11,7 +11,7 @@ export default function Slider() {
   const swiperRef = useRef();
 
   return (
-    <div className="relative h-[26rem] sm:h-[20rem] md:h-[19rem] max-w-[24rem] sm:max-w-[33rem] md:container lg:max-w-6xl w-full mx-auto mt-16">
+    <div className="relative h-[26rem] sm:h-[20rem] md:h-[19rem] max-w-[24rem] sm:max-w-[33rem] md:container lg:max-w-6xl w-full mx-auto mt-4">
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
