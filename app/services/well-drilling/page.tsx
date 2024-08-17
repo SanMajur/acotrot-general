@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function WellDrillingPage() {
-  return <div>WellDrillingPage</div>;
+  return <div className="min-h-screen p-8 h-full">WellDrillingPage</div>;
 }
