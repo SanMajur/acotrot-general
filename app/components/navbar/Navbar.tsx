@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <header className="bg-gray-100 text-gray-800 shadow-md fixed top-0 right-0 left-0 z-50">
       <nav className="lg:container mx-auto flex justify-between items-center relative px-8 py-2">
-        <Logo closeMenu={closeMenu} closeDropdown={closeDropdown} />
+        <Logo />
         <button className="lg:hidden text-gray-700 focus:outline-none">
           <Hamburger toggled={isOpen} toggle={setIsOpen} />
         </button>
@@ -57,6 +57,78 @@ export default function Navbar() {
               >
                 About
               </Link>
+            </li>
+            <li
+              className=" hover:bg-gray-700  cursor-pointer border-b border-gray-500 "
+              onClick={() => setIsDropdown(!isDropdown)}
+            >
+              <h2 className="px-8 py-4 flex justify-between items-center">
+                Services{" "}
+                <MdArrowDropUp
+                  size={25}
+                  className={`w-10 ${
+                    isDropdown
+                      ? "transition-all duration-500 ease-in-out"
+                      : "rotate-180 transition-all duration-500 ease-in-out"
+                  }`}
+                />
+              </h2>
+              <ul
+                className={`transition-all duration-500 ease-in-out ${
+                  isDropdown
+                    ? "block transition-all duration-500 ease-in-out"
+                    : " hidden transition-all duration-500 ease-in-out"
+                }`}
+              >
+                <li
+                  className="hover:bg-gray-600 py-4 cursor-pointer px-12 block"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <Link href="../../services/agriculture" className="block">
+                    Agriculture
+                  </Link>
+                </li>
+                <li
+                  className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <Link href="../../services/construction" className="block">
+                    Construction
+                  </Link>
+                </li>
+                <li
+                  className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <Link href="../../services/consumer-goods" className="block">
+                    Consumer Goods
+                  </Link>
+                </li>
+                <li
+                  className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <Link href="../../services/transportation" className="block">
+                    Transportation
+                  </Link>
+                </li>
+                <li
+                  className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <Link href="../../services/well-drilling" className="block">
+                    Well Drilling
+                  </Link>
+                </li>
+                <li
+                  className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
+                  onClick={() => setIsOpen(!isOpen)}
+                >
+                  <Link href="../../services/accomodation" className="block">
+                    Accomodation
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li
               className=" hover:bg-gray-700  cursor-pointer border-b border-gray-500 "
