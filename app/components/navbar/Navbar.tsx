@@ -63,7 +63,7 @@ export default function Navbar() {
               onClick={() => setIsDropdown(!isDropdown)}
             >
               <h2 className="px-8 py-4 flex justify-between items-center">
-                Services{" "}
+                Our Products{" "}
                 <MdArrowDropUp
                   size={25}
                   className={`w-10 ${
@@ -84,7 +84,7 @@ export default function Navbar() {
                   className="hover:bg-gray-600 py-4 cursor-pointer px-12 block"
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  <Link href="../../services/agriculture" className="block">
+                  <Link href="../../our-products/agriculture" className="block">
                     Agriculture
                   </Link>
                 </li>
@@ -92,7 +92,10 @@ export default function Navbar() {
                   className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  <Link href="../../services/construction" className="block">
+                  <Link
+                    href="../../our-products/construction"
+                    className="block"
+                  >
                     Construction
                   </Link>
                 </li>
@@ -100,7 +103,10 @@ export default function Navbar() {
                   className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  <Link href="../../services/consumer-goods" className="block">
+                  <Link
+                    href="../../our-products/consumer-goods"
+                    className="block"
+                  >
                     Consumer Goods
                   </Link>
                 </li>
@@ -108,7 +114,10 @@ export default function Navbar() {
                   className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  <Link href="../../services/transportation" className="block">
+                  <Link
+                    href="../../our-products/transportation"
+                    className="block"
+                  >
                     Transportation
                   </Link>
                 </li>
@@ -116,7 +125,10 @@ export default function Navbar() {
                   className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  <Link href="../../services/well-drilling" className="block">
+                  <Link
+                    href="../../our-products/well-drilling"
+                    className="block"
+                  >
                     Well Drilling
                   </Link>
                 </li>
@@ -124,7 +136,10 @@ export default function Navbar() {
                   className="hover:bg-gray-600 py-4 cursor-pointer px-12 "
                   onClick={() => setIsOpen(!isOpen)}
                 >
-                  <Link href="../../services/accomodation" className="block">
+                  <Link
+                    href="../../our-products/accomodation"
+                    className="block"
+                  >
                     Accomodation
                   </Link>
                 </li>
